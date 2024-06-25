@@ -20,7 +20,7 @@ function MainMobileNav() {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant="outline" className="w-10 px-0">
+        <Button variant="outline" className="w-10 px-0 sm:hidden">
           <Menu className="h-5 w-5" />
           <span className="sr-only">Toggle Navigation</span>
         </Button>

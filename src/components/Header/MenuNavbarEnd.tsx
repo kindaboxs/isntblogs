@@ -4,6 +4,7 @@ import { SiGithub, SiSpotify, SiX } from "react-icons/si";
 import { buttonVariants } from "../ui/button";
 import { cn } from "@/lib/utils";
 import MainMobileNav from "../Mobile/MainMobileNav";
+import ToggleThemeButton from "./ThemeToggle";
 
 function MenuNavbarEnd() {
   return (
@@ -57,6 +58,7 @@ function MenuNavbarEnd() {
             <span className="sr-only">Spotify</span>
           </div>
         </Link>
+        <ToggleThemeButton />
         <MainMobileNav />
       </nav>
     </div>
