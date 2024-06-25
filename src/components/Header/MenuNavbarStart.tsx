@@ -18,38 +18,42 @@ function MenuNavbarStart() {
         href={"/"}
         className={cn(
           buttonVariants({ variant: "ghost" }),
-          "mr-6 flex items-center space-x-2",
+          "flex items-center space-x-2",
         )}
       >
         <Icons.logo className="h-6 w-6" />
         <span className="text-lg font-bold">{siteconfig.name}</span>
       </Link>
-      <Link
-        href={"/blog"}
-        className={cn(
-          buttonVariants({ variant: "ghost", size: "sm" }),
-          "flex items-center space-x-2",
-          pathname === "/blog"
-            ? buttonVariants({ variant: "default", size: "sm" })
-            : buttonVariants({ variant: "ghost", size: "sm" }),
-        )}
-      >
-        <IoDocumentText className="h-4 w-4" />
-        <span className="font-md text-sm">Blog</span>
-      </Link>
-      <Link
-        href={"/about"}
-        className={cn(
-          buttonVariants({ variant: "ghost", size: "sm" }),
-          "flex items-center space-x-2",
-          pathname === "/about"
-            ? buttonVariants({ variant: "default", size: "sm" })
-            : buttonVariants({ variant: "ghost", size: "sm" }),
-        )}
-      >
-        <PiBookOpenUserFill className="h-4 w-4" />
-        <span className="font-md text-sm">About</span>
-      </Link>
+      <div className="hidden sm:inline-flex">
+        <Link
+          href={"/blog"}
+          className={cn(
+            buttonVariants({ variant: "ghost", size: "sm" }),
+            "flex items-center space-x-2",
+            pathname === "/blog"
+              ? buttonVariants({ variant: "default", size: "sm" })
+              : buttonVariants({ variant: "ghost", size: "sm" }),
+          )}
+        >
+          <IoDocumentText className="h-4 w-4" />
+          <span className="font-md text-sm">Blog</span>
+        </Link>
+      </div>
+      <div className="hidden sm:inline-flex">
+        <Link
+          href={"/about"}
+          className={cn(
+            buttonVariants({ variant: "ghost", size: "sm" }),
+            "flex items-center space-x-2",
+            pathname === "/about"
+              ? buttonVariants({ variant: "default", size: "sm" })
+              : buttonVariants({ variant: "ghost", size: "sm" }),
+          )}
+        >
+          <PiBookOpenUserFill className="h-4 w-4" />
+          <span className="font-md text-sm">About</span>
+        </Link>
+      </div>
     </nav>
   );
 }
