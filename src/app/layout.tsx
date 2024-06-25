@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 
 import { cn } from "@/lib/utils";
+import { MainHeader } from "@/components/Header/MainHeader";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -28,7 +29,10 @@ export default function RootLayout({
           poppins.variable,
         )}
       >
-        {children}
+        <div className="bg-background relative flex min-h-screen flex-col">
+          <MainHeader />
+          <main className="flex-1">{children}</main>
+        </div>
       </body>
     </html>
   );
