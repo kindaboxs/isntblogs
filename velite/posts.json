@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Hello world",
+    "slug": "blog/hello-world",
+    "description": "test doang",
+    "date": "1992-02-25T06:22:00.000Z",
+    "published": true,
+    "body": "const{Fragment:n,jsx:e,jsxs:t}=arguments[0];function _createMdxContent(r){const s={h1:\"h1\",p:\"p\",...r.components};return t(n,{children:[e(s.h1,{children:\"yoi ga slur\"}),\"\\n\",e(s.p,{children:\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse\"})]})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "slugAsParams": "hello-world"
+  }
+]
