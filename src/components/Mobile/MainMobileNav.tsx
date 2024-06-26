@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "../ui/sheet";
 import { Button, buttonVariants } from "../ui/button";
 import { Menu } from "lucide-react";
 import Link, { LinkProps } from "next/link";
@@ -31,8 +31,8 @@ function MainMobileNav() {
           href="/"
           className="flex items-center"
         >
-          <Icons.logo className="mr-2 h-5 w-5" />
-          <span className="text-xl font-bold">isntblogs</span>
+          <Icons.logo className="mr-2 h-5 w-5 fill-current" />
+          <SheetTitle className="text-xl font-bold">isntblogs</SheetTitle>
         </MobileLinkNav>
         <hr className="border-border my-4 border-t" />
         <div className="mt-4 flex flex-col gap-3">

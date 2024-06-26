@@ -21,7 +21,7 @@ function MenuNavbarStart() {
           "flex items-center space-x-2",
         )}
       >
-        <Icons.logo className="h-6 w-6" />
+        <Icons.logo className="h-6 w-6 fill-current" />
         <span className="text-lg font-bold">{siteconfig.name}</span>
       </Link>
       <div className="hidden sm:inline-flex">
